@@ -65,7 +65,7 @@ public class UserManagementTest extends TestBase {
 		
 	}
 
-	
+	// To quit the browser after the method
 	@AfterMethod
 	public void tearDown3(){
 		driver.quit();
