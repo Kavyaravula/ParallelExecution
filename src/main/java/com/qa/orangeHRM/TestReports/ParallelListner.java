@@ -5,7 +5,7 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-import com.qa.orangeHRM.TestBase.LocalDriverManager;
+
 import com.qa.orangeHRM.TestBase.TestBase;
 
 public class ParallelListner implements IInvokedMethodListener {
