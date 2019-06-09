@@ -1,0 +1,43 @@
+package com.qa.orangeHRM.TestReports;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.IInvokedMethod;
+import org.testng.IInvokedMethodListener;
+import org.testng.ITestResult;
+
+import com.qa.orangeHRM.TestBase.LocalDriverManager;
+import com.qa.orangeHRM.TestBase.TestBase;
+
+public class ParallelListner implements IInvokedMethodListener {
+
+	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/*public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+		if (method.isTestMethod()) {
+            String browserName = method.getTestMethod().getXmlTest().getLocalParameters().get("browser");
+            WebDriver driver = TestBase.selectBrowserAndOpenURL(browserName); 
+            		
+            LocalDriverManager.setWebDriver(driver);
+        }
+		
+	}
+
+	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
+		 if (method.isTestMethod()) {
+	            WebDriver driver = LocalDriverManager.getDriver();
+	            if (driver != null) {
+	                driver.quit();
+	            }
+	        }
+		
+	}*/
+
+}
